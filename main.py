@@ -1,9 +1,7 @@
 def tinh_thue_thu_nhap(thu_nhap):
-    # Dev A áp dụng giảm trừ 4 triệu và thuế 5%
+    # Kết hợp logic của Dev A và Dev B
     thu_nhap_tinh_thue = thu_nhap - 4000000
-    return max(0, thu_nhap_tinh_thue * 0.05)
+    return max(0, thu_nhap_tinh_thue * 0.1)
 
-thu_nhap = 10000000
-thue = tinh_thue_thu_nhap(thu_nhap)
-
-print("Thuế phải nộp:", thue)
+thu_nhap = float(input("Nhập thu nhập: "))
+print("Thuế phải nộp của bạn là:", tinh_thue_thu_nhap(thu_nhap))
